@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Enhance your photos with our online image filter generator. Apply various filters and effects to make your images pop!"
+    />
+    <meta
+      name="keywords"
+      content="image filter generator, photo filters, image effects, online photo editor, filter tool, image enhancement, filter attribute, image"
+    />
+    <meta name="author" content="Rahul Gupta" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      property="og:title"
+      content="Image Filter Generator | Your Website Name"
+    />
+    <meta
+      property="og:description"
+      content="Enhance your photos with our online image filter generator. Apply various filters and effects to make your images pop!"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.yourwebsite.com/image-filter-generator"
+    />
+    <meta
+      property="og:image"
+      content="https://www.yourwebsite.com/images/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <title>Image Filter Generator | Your Website Name</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tools card-hover">
+        <h3>Filter Options</h3>
+        <ul>
+          <li>
+            blur
+            <input
+              type="range"
+              name=""
+              max="20"
+              min="0"
+              step="1"
+              id="blur"
+              value="0"
+            />
+          </li>
+          <li>
+            contrast
+            <input
+              type="range"
+              name=""
+              max="200"
+              min="0"
+              step="20"
+              id="contrast"
+            />
+          </li>
+          <li>
+            grayscale
+            <input
+              type="range"
+              name=""
+              max="100"
+              min="0"
+              step="10"
+              id="grayscale"
+              value="0"
+            />
+          </li>
+          <li>
+            hue rotate
+            <input
+              type="range"
+              name=""
+              max="360"
+              min="0"
+              step="10"
+              id="hue-rotate"
+              value="0"
+            />
+          </li>
+          <li>
+            invert
+            <input
+              type="range"
+              name=""
+              max="100"
+              min="0"
+              step="10"
+              id="invert"
+              value="0"
+            />
+          </li>
+          <li>
+            sepia
+            <input
+              type="range"
+              name=""
+              max="100"
+              min="0"
+              step="10"
+              id="sepia"
+              value="0"
+            />
+          </li>
+          <li>
+            saturate
+            <input
+              type="range"
+              name=""
+              max="100"
+              min="0"
+              step="10"
+              id="saturate"
+              value="100"
+            />
+          </li>
+          <li>
+            opacity
+            <input
+              type="range"
+              name=""
+              max="100"
+              min="0"
+              step="10"
+              value="100"
+              id="opacity"
+            />
+          </li>
+          <li style="display: flex; flex-direction: column">
+            dropshadow
+            <div class="dropshadow">
+              <label>
+                offset-x <span>px</span>
+                <input
+                  type="number"
+                  max="100"
+                  min="0"
+                  id="dropshadow-x"
+                  value="0"
+                />
+              </label>
+
+              <label>
+                offset-y <span>px</span>
+                <input
+                  type="number"
+                  max="100"
+                  min="0"
+                  id="dropshadow-y"
+                  value="0"
+                />
+              </label>
+              <label>
+                blur
+                <span style="position: relative; right: 8px">px</span>
+                <input
+                  type="number"
+                  max="100"
+                  min="0"
+                  id="dropshadow-blur"
+                  value="5"
+                />
+              </label>
+            </div>
+            <label class="dropshadow-color">
+              color:
+              <input type="color" id="dropshadow-color" />
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="code"></div>
+      <div class="effects card-hover">
+        <img
+          src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
